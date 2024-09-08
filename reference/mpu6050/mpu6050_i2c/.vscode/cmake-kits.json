@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Pico",
+        "compilers": {
+            "C": "${userHome}/.pico-sdk/toolchain/RISCV_13_3/bin/riscv32-unknown-elf-gcc",
+            "CXX": "${userHome}/.pico-sdk/toolchain/RISCV_13_3/bin/riscv32-unknown-elf-gcc"
+        },
+        "toolchainFile": "${env:HOME}/.pico-sdk/sdk/2.0.0/cmake/preload/toolchains/pico_riscv_gcc.cmake",
+        "environmentVariables": {
+            "PATH": "${command:raspberry-pi-pico.getEnvPath};${env:PATH}"
+        },
+        "cmakeSettings": {
+            "Python3_EXECUTABLE": "${command:raspberry-pi-pico.getPythonPath}"
+        }
+    }
+]

@@ -1,0 +1,399 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      The target system is: PICO -  - cortex-m33
+      The host system is: Linux - 6.8.0-40-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/gcc 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags:  
+      
+      The output was:
+      1
+      gcc: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      gcc: error: unrecognized command-line option ‘-mthumb’
+      gcc: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      gcc: error: unrecognized command-line option ‘-mcmse’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/gcc 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: -c 
+      
+      The output was:
+      1
+      gcc: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      gcc: error: unrecognized command-line option ‘-mthumb’
+      gcc: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      gcc: error: unrecognized command-line option ‘-mcmse’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/gcc 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      gcc: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      gcc: error: unrecognized command-line option ‘-mthumb’
+      gcc: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      gcc: error: unrecognized command-line option ‘-mcmse’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/gcc 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      gcc: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      gcc: error: unrecognized command-line option ‘-mthumb’
+      gcc: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      gcc: error: unrecognized command-line option ‘-mcmse’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/gcc 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      gcc: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      gcc: error: unrecognized command-line option ‘-mthumb’
+      gcc: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      gcc: error: unrecognized command-line option ‘-mcmse’
+      gcc: error: unrecognized command-line option ‘--target=arm-arm-none-eabi’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/gcc 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      gcc: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      gcc: error: unrecognized command-line option ‘-mthumb’
+      gcc: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      gcc: error: unrecognized command-line option ‘-mcmse’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/satlab/picosdk/Matrix Library/build/CMakeFiles/3.28.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/g++ 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags:  
+      
+      The output was:
+      1
+      g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      g++: error: unrecognized command-line option ‘-mthumb’
+      g++: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      g++: error: unrecognized command-line option ‘-mcmse’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/g++ 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: -c 
+      
+      The output was:
+      1
+      g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      g++: error: unrecognized command-line option ‘-mthumb’
+      g++: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      g++: error: unrecognized command-line option ‘-mcmse’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/g++ 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      g++: error: unrecognized command-line option ‘-mthumb’
+      g++: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      g++: error: unrecognized command-line option ‘-mcmse’
+      g++: error: unrecognized command-line option ‘--c++’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/g++ 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      g++: error: unrecognized command-line option ‘-mthumb’
+      g++: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      g++: error: unrecognized command-line option ‘-mcmse’
+      g++: error: unrecognized command-line option ‘--ec++’; did you mean ‘-Weffc++’?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/g++ 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      g++: error: unrecognized command-line option ‘-mthumb’
+      g++: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      g++: error: unrecognized command-line option ‘-mcmse’
+      g++: error: unrecognized command-line option ‘--target=arm-arm-none-eabi’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/g++ 
+      Build flags: -mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      g++: error: unrecognized command-line option ‘-mthumb’
+      g++: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+      g++: error: unrecognized command-line option ‘-mcmse’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/satlab/picosdk/Matrix Library/build/CMakeFiles/3.28.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 13.2.1 20231009
+      Copyright (C) 2023 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:60 (try_compile)"
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/satlab/picosdk/Matrix Library/build/CMakeFiles/CMakeScratch/TryCompile-41z3q2"
+      binary: "/home/satlab/picosdk/Matrix Library/build/CMakeFiles/CMakeScratch/TryCompile-41z3q2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/satlab/.pico-sdk/sdk/2.0.0/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/satlab/picosdk/Matrix Library/build/CMakeFiles/CMakeScratch/TryCompile-41z3q2'
+        
+        Run Build Command(s): /home/satlab/.pico-sdk/ninja/v1.12.1/ninja -v cmTC_847f0
+        [1/2] /usr/bin/gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -std=gnu11   -v -o CMakeFiles/cmTC_847f0.dir/CMakeCCompilerABI.c.obj -c /home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        FAILED: CMakeFiles/cmTC_847f0.dir/CMakeCCompilerABI.c.obj 
+        /usr/bin/gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -std=gnu11   -v -o CMakeFiles/cmTC_847f0.dir/CMakeCCompilerABI.c.obj -c /home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        gcc: error: unrecognized command-line option '-mthumb'
+        gcc: error: unrecognized command-line option '-mfloat-abi=softfp'
+        gcc: error: unrecognized command-line option '-mcmse'
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/satlab/.pico-sdk/cmake/v3.28.6/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Check for working C compiler: /usr/bin/gcc"
+    directories:
+      source: "/home/satlab/picosdk/Matrix Library/build/CMakeFiles/CMakeScratch/TryCompile-NnXdGC"
+      binary: "/home/satlab/picosdk/Matrix Library/build/CMakeFiles/CMakeScratch/TryCompile-NnXdGC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/satlab/.pico-sdk/sdk/2.0.0/cmake"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/satlab/picosdk/Matrix Library/build/CMakeFiles/CMakeScratch/TryCompile-NnXdGC'
+        
+        Run Build Command(s): /home/satlab/.pico-sdk/ninja/v1.12.1/ninja -v cmTC_f4af6
+        [1/2] /usr/bin/gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -std=gnu11 -o CMakeFiles/cmTC_f4af6.dir/testCCompiler.c.obj -c '/home/satlab/picosdk/Matrix Library/build/CMakeFiles/CMakeScratch/TryCompile-NnXdGC/testCCompiler.c'
+        FAILED: CMakeFiles/cmTC_f4af6.dir/testCCompiler.c.obj 
+        /usr/bin/gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -std=gnu11 -o CMakeFiles/cmTC_f4af6.dir/testCCompiler.c.obj -c '/home/satlab/picosdk/Matrix Library/build/CMakeFiles/CMakeScratch/TryCompile-NnXdGC/testCCompiler.c'
+        gcc: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+        gcc: error: unrecognized command-line option ‘-mthumb’
+        gcc: error: unrecognized command-line option ‘-mfloat-abi=softfp’
+        gcc: error: unrecognized command-line option ‘-mcmse’
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

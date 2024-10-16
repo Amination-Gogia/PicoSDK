@@ -13,7 +13,6 @@ float temp;
 double RateP, RateQ, RateR;
 double AccX, AccY, AccZ;
 
-QMC5883L compass(i2c0, QMC5883L_ADDR);
 double xo, yo, zo;
 float x_fin, y_fin, z_fin;
 
@@ -74,20 +73,41 @@ void gyro_signals()
     RateR = -gz * 3.14 / 180;
 }
 
-void read_mag(float &x_read, float &y_read, float &z_read)
+void read_mag(QMC5883L compass, float &x_read, float &y_read, float &z_read)
 {
-    float x, y, z;
-    x = compass.getX() / 12000;
-    // printf("%f", x);
-    y = compass.getY() / 12000;
-    z = compass.getZ() / 12000;
-    // Vector(x, y, z).display();
-    calibrate(x, y, z, x_read, y_read, z_read);
-    // sleep_ms(0.1);
-    // printf("Read_mag working");
+    // float x, y, z;
+    // int16_t x_r = compass.getX();
+    // x = x_r / 12000.0;
+    // // printf("%f", x);
+    // int16_t y_r = compass.getY();
+    // // y = compass.getY() / 12000.0;
+    // y = y_r / 12000.0;
+
+    // int16_t z_r = compass.getZ();
+    // z = z_r / 12000.0;
+    // // Vector(x, y, z).display();
+    // calibrate(x, y, z, x_read, y_read, z_read);
+    // // sleep_ms(0.1);
+    // // printf("Read_mag working");
+    int16_t raw_x = compass.getX();
+    int16_t raw_y = compass.getY();
+    int16_t raw_z = compass.getZ();
+
+    // Convert raw data to float (assuming you need to convert based on your sensor's resolution)
+    float x_mag = (float)raw_x / 12000;
+    float y_mag = (float)raw_y / 12000;
+    float z_mag = (float)raw_z / 12000;
+
+    float x_calibrated, y_calibrated, z_calibrated;
+    calibrate(x_mag, y_mag, z_mag, x_read, y_read, z_read);
+
+    // Print calibrated data
+    // printf("Bx: %.2f, By: %.2f, Bz: %.2f\n", x_read, y_read, z_read);
+    float norm = x_read * x_read + y_read * y_read + z_read * z_read;
+    // printf("%f", pow(norm, 0.5));
 }
 
-void triad()
+void triad(QMC5883L comp)
 {
     int x, y, z;
 
@@ -96,7 +116,8 @@ void triad()
     // x = -1.0 * (double)(compass.getY());
     // z = (double)compass.getZ();
     float x_read, y_read, z_read;
-    read_mag(x_read, y_read, z_read);
+    read_mag(comp, x_read, y_read, z_read);
+    Vector(x_read, y_read, z_read).display();
     // Read IMU
     gyro_signals();
 
@@ -384,7 +405,7 @@ void predict_state(Matrix &x_prop, Matrix &del_x, Vector &omega_meas,
     q_prop = q_est; // keeping latest quaternion in propagation
 }
 
-void setup()
+void setup(QMC5883L com)
 {
     int n = 1000;
     i2c_init(i2c0, 100000);
@@ -393,12 +414,12 @@ void setup()
     gpio_pull_up(4);
     gpio_pull_up(5);
     mpu6050_init();
-    compass.init();
+
     hils = false;
     float x_1, y_1, z_1;
     for (int i = 0; i < n; i++)
     {
-        read_mag(x_1, y_1, z_1);
+        read_mag(com, x_1, y_1, z_1);
         xo += x_1;
         yo += y_1;
         zo += z_1;
@@ -410,8 +431,8 @@ void setup()
     z_ref.matrix[1][0] = 0;
     z_ref.matrix[2][0] = 1;
 
-    triad();
-    attitude = att_triad;
+    // triad(compass);
+    // attitude = att_triad;
     float mod = sqrt(xo * xo + yo * yo + zo * zo);
     mag_fixed.setX(xo / mod);
     mag_fixed.setY(yo / mod);
@@ -458,42 +479,36 @@ void setup()
 int main()
 {
     stdio_init_all();
-    setup();
+
+    QMC5883L compass(i2c0, QMC5883L_ADDR);
+    compass.init();
+    setup(compass);
     while (true)
     {
-        // triad();
-        // att_triad.display();
-        // printf("\n");
-        // q_est = attitude_matrix_to_quaternion(att_triad);
-        // att_triad.display();
-        // for (int i = 0; i < 3; i++)
-        // {
-        //     printf("%f, ", q_prop.matrix[i][0]);
-        // }
-        // printf("%f\n", q_prop.matrix[3][0]);
-        // sleep_ms(100);
+        // int16_t raw_x = compass.getX();
+        // int16_t raw_y = compass.getY();
+        // int16_t raw_z = compass.getZ();
+
+        // // Convert raw data to float (assuming you need to convert based on your sensor's resolution)
+        // float x_mag = (float)raw_x / 12000;
+        // float y_mag = (float)raw_y / 12000;
+        // float z_mag = (float)raw_z / 12000;
+
+        // float x_calibrated, y_calibrated, z_calibrated;
+        // calibrate(x_mag, y_mag, z_mag, x_calibrated, y_calibrated, z_calibrated);
+
+        // // Print calibrated data
+        // printf("Bx: %.2f, By: %.2f, Bz: %.2f\n", x_calibrated, y_calibrated, z_calibrated);
+        // float norm = x_calibrated * x_calibrated + y_calibrated * y_calibrated + z_calibrated * z_calibrated;
+        // printf("%f", pow(norm, 0.5));
+        float a, b, c;
+        // read_mag(compass, a, b, c);
         // gyro_signals();
-        // Vector acc_live = Vector(AccX, AccY, AccZ);
-        // Vector w_live = Vector(RateP, RateQ, RateR);
-        float b_x, b_y, b_z;
-        read_mag(b_x, b_y, b_z);
-        float x = compass.getX();
-        printf("%f", b_x);
-        // Vector(b_x, b_y, b_z).display();
 
-        // Vector b_live(x_fin, y_fin, z_fin);
-        // measurement_update(acc_live, b_live, iner_prop, z_ref, q_prop, q_est, P_prop, R, x_ref, delta_x, first_estimate_done);
-
-        // reset(delta_x, x_ref, q_ref, q_est);
-
-        // predict_state(x_prop, delta_x, w_live, std_dev_gyro, P_prop, dt);
-        // // z_ref.display();
-
-        sleep_ms(dt * 1000);
-        // // triad();
-        // gyro_signals();
-        // printf("%lf, %lf, %lf\n", AccX, AccY, AccZ);
+        // Vector(a, b, c).display();
+        triad(compass);
+        q_prop = attitude_matrix_to_quaternion(att_triad);
+        q_prop.display();
+        sleep_ms(100);
     }
-
-    return 0;
 }
